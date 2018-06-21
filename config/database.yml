@@ -13,20 +13,20 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: a3b5a8_lorawan
-  password: asdqwe123
-  host: mysql5013.site4now.net
+  username: grupo2 #a3b5a8_lorawan
+  password: powercar2  #asdqwe123
+  host:  powercar.cfehaj2lber6.us-east-2.rds.amazonaws.com #mysql5013.site4now.net
 
 development:
   <<: *default
-  database: db_a3b5a8_lorawan
+  database: forum
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: pdb_a3b5a8_lorawan
+  database: forum
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
